@@ -1,11 +1,11 @@
-var playlist = ({JayZ: `Otis`})
+var playlist = {artistName: "songTitle"}
 
-function updatePlaylist(playlist, Slowdive, Time) {
-  playlist[Slowdive] = Time;
-  return playlist;
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle
+  return playlist
 }
 
-function removeFromPlaylist(playlist, Slowdive) {
-  delete playlist.Slowdive;
-  return playlist;
+function removeFromPlaylist(playlist, Slowdrive) {
+  delete playlist[Slowdrive]
+  return playlist
 }
